@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+    display:flex;
+    align-items:center;
+    justify-content: center; 
+    flex-direction:column;
+    
+}
+.result-section{
+    display:flex;
+}
+.count{
+    width:10vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+.count p{
+    font-size:1.7rem;
+    padding-right:18px;
+    font-weight:600;
+}
+.container{
+    margin-top:5vh;
+    /* width:42vw; */
+    border:2px solid rgba(0,0,0,0.6);
+    padding:1rem 0;
+    border-radius:0.8em;
+}
+.container div{
+     display:flex;
+}
+ .sr-number{
+    width:2rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-right:1px solid rgba(0,0,0,0.5);
+ }
+ .sr-number p{
+    font-size:18px;
+    font-weight:600;
+    color:rgba(0,0,0,0.9);
+ }
+ .candidate-name{
+    width:400px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    /* border:1px solid red; */
+    padding-inline:10px;
+ }
+.candidate-name p{
+    font-size:20px;
+    text-transform:capitalize;
+    /* margin-left:1.5rem; */
+    align-self:flex-start;
+    padding-top:15px;
+}
+.candidate-name img{
+    width:50px;
+    align-self:flex-end;
+}
+.light{
+    width:2rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-left:1px solid rgba(0,0,0,0.5);
+}
+.red-light{
+    width:20px;
+    height:20px;
+    background-color:rgba(255,0,0,1);
+    border-radius:50%;
+}
+.green-light{
+    width:20px;
+    height:20px;
+    background-color:rgba(0,255,0,1);
+    border-radius:50%;
+}
+.btn{
+    width:7rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:20px;
+}
+.container button{
+    width:5rem;
+    border-radius:1rem;
+    font-size:1.2rem;
+    padding:8px 60px; 
+    margin-left:20px;
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+    background-color:rgba(30,99,255,1); 
+    border:2px solid rgba(0,0,0,0.5);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+button:hover{
+    background-color:rgb(2, 10, 25);   
+}
+#device-error-msg{
+    display:none;
+}
+
+@media(max-width:1000px){
+    .result-section,.container{
+        display:none;
+    }
+    #device-error-msg{
+        display:inline-block;
+        font-size:22px;
+        text-transform:capitalize;
+        margin-block:200px;
+        margin-inline:10px;
+    }
+}
